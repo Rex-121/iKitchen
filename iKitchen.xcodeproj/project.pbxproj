@@ -16,6 +16,8 @@
 		A283F3A82A03B7FC00AC6BF6 /* iKitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A283F3A72A03B7FC00AC6BF6 /* iKitchenTests.swift */; };
 		A283F3B22A03B7FC00AC6BF6 /* iKitchenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A283F3B12A03B7FC00AC6BF6 /* iKitchenUITests.swift */; };
 		A283F3B42A03B7FC00AC6BF6 /* iKitchenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A283F3B32A03B7FC00AC6BF6 /* iKitchenUITestsLaunchTests.swift */; };
+		A283F3C12A03B80800AC6BF6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A283F3C02A03B80800AC6BF6 /* MainView.swift */; };
+		A283F3C32A03BC8600AC6BF6 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A283F3C22A03BC8600AC6BF6 /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A283F3AD2A03B7FC00AC6BF6 /* iKitchenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKitchenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A283F3B12A03B7FC00AC6BF6 /* iKitchenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKitchenUITests.swift; sourceTree = "<group>"; };
 		A283F3B32A03B7FC00AC6BF6 /* iKitchenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKitchenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A283F3C02A03B80800AC6BF6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A283F3C22A03BC8600AC6BF6 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				A283F3902A03B7FB00AC6BF6 /* iKitchenApp.swift */,
 				A283F3922A03B7FB00AC6BF6 /* ContentView.swift */,
+				A283F3C02A03B80800AC6BF6 /* MainView.swift */,
+				A283F3C22A03BC8600AC6BF6 /* ItemView.swift */,
 				A283F3942A03B7FC00AC6BF6 /* Assets.xcassets */,
 				A283F3992A03B7FC00AC6BF6 /* Persistence.swift */,
 				A283F39E2A03B7FC00AC6BF6 /* Info.plist */,
@@ -266,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A283F39D2A03B7FC00AC6BF6 /* iKitchen.xcdatamodeld in Sources */,
+				A283F3C32A03BC8600AC6BF6 /* ItemView.swift in Sources */,
 				A283F39A2A03B7FC00AC6BF6 /* Persistence.swift in Sources */,
 				A283F3932A03B7FB00AC6BF6 /* ContentView.swift in Sources */,
+				A283F3C12A03B80800AC6BF6 /* MainView.swift in Sources */,
 				A283F3912A03B7FB00AC6BF6 /* iKitchenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,10 +432,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iKitchen/Preview Content\"";
-				DEVELOPMENT_TEAM = 9A4N28Q4X8;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4XNYYJC5N2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -442,6 +452,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roobo.demo.ikit.iKitchen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Wildcard Demo Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,10 +465,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iKitchen/Preview Content\"";
-				DEVELOPMENT_TEAM = 9A4N28Q4X8;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4XNYYJC5N2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -471,6 +485,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roobo.demo.ikit.iKitchen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Wildcard Demo Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
